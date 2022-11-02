@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poor Story', cursive;
+    text-align: center;
+    padding: 1rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin-block-end: 1rem;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+main img {
+    width: 80%;
+    margin: auto;
+    border-radius: .2rem;
+    display: block;
+}
+
+main button {
+    background-color: transparent;
+    margin-block-start: 1rem;
+    padding: .5rem;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+main button:hover {
+    transform: scale(1.1);
+}
+
+main button:active {
+    transform: scale(.9);
+}
+
+main p {
+    padding: .5rem;
+}
+
+footer {
+    margin-top: auto;
+}
+
+footer p {
+    margin-block-end: .5rem;
+}
+
+.link {
+    text-decoration: none;
+    color: darkviolet;
+    padding: .5rem;
+}
+
+.link:hover {
+    animation-play-state: paused;
+}
+
+@supports(-webkit-background-clip: text) or (background-clip: text) or (-moz-background-clip: text) {
+    .link {
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        border-radius: 100rem;
+        background-image: linear-gradient(to right, violet, cyan, lime, gold, violet, cyan, lime, gold, violet);
+        background-size: 200%;
+        animation: link-animation 5s infinite linear;
+        position: relative;
+    }
+}
+
+@keyframes link-animation {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+}
