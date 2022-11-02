@@ -27,6 +27,7 @@ header h1 {
 
 main img {
     width: 80%;
+    max-width: 700px;
     margin: auto;
     border-radius: .2rem;
     display: block;
